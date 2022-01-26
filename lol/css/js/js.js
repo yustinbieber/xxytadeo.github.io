@@ -270,9 +270,6 @@ $(document).ready(function(e) {
          case "/dox":
              window.location.href = "https://www.youtube.com/watch?v=asdhdkginwks";
              break;
-         case "/serbio":
-             window.location.href = "https://cdn.discordapp.com/attachments/913436564217028608/935701441568440320/febd55c6d1a6f9c6595d0bc15ab78878.png";
-             break;
           case "/clear":
              $(".stream").text("");
              break;
@@ -288,9 +285,6 @@ $(document).ready(function(e) {
           case "/index":
                window.location.href = "https://ducatti.xyz/proximamente.html";
                break;
-         case "/about":
-                log("Client", "> " + "Type /nav about");
-             break;
          case "/connect":
                 log("Client", "> " + "Type /nav connect");
              break;
