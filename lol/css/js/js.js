@@ -10,8 +10,8 @@ $(document).ready(function(e) {
        ["/list", "List all pages on the website"],
        ["/nav &lt;location&gt;", "Navigate to location"],
        ["/dox &lt;full name&gt;", "Search over 700 million people online for free and find contact information, address and phone for anyone."],
-       ["/clear", "clear cmd"],
-       ["/index", "go to index"],
+       ["/clear", "Clear cmd"],
+       ["/index", "Go to index"],
     ];
     var previouscommands = [];
     var currentcommand = 0;
