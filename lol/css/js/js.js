@@ -50,7 +50,6 @@ $(document).ready(function(e) {
        log("System", "A! ## ##     ## ##      ##       ##  ## ##       ##   ###########   ##     ## ##       ##     ## ");
        log("System", "A!##   ##   ##   ##     ##       ##   ##         ##  ##         ##  ##     ## ##       ##     ## ");
        log("System", "A!##    ####      ##    ##        ####  ##       ## ##           ## #######   #######   #######  ");
-       urlvars();
        log("Client", "For help type '/help'");
        setInterval(favicon,500);
     }
