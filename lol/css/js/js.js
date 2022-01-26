@@ -75,9 +75,6 @@ $(document).ready(function(e) {
                 //log("Client", "404 - The page '" + pageloc + "' does not exist. To "); 
              }
          }
-         if(pageloc == "") {
-               log("Client", "What would you like to access?");	
-         }
     }
     function getParam(name){
          name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
