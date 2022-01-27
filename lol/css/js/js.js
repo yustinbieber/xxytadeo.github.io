@@ -270,9 +270,6 @@ $(document).ready(function(e) {
          case "/dox":
              window.location.href = "https://youtu.be/HL7lbpnNzjM";
              break;
-         case "/1001":
-             window.location.href = "https://cdn.discordapp.com/attachments/913435979531026483/935407717345017866/foto-5.png";
-             break;
           case "/clear":
              $(".stream").text("");
              break;
