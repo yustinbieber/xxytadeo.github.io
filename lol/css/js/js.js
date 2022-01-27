@@ -286,7 +286,7 @@ $(document).ready(function(e) {
              }
              break;
           case "/index":
-               window.location.href = "https://ducatti.xyz/proximamente.html";
+               window.location.href = "https://ducatti.xyz/proximamente";
                break;
          case "/connect":
                 log("Client", "> " + "Type /nav connect");
