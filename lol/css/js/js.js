@@ -268,7 +268,7 @@ $(document).ready(function(e) {
              }
              break;
          case "/dox":
-             window.location.href = "https://www.youtube.com/watch?v=${result.items[0]["id"].videoId}";
+             window.location.href = "https://youtu.be/HL7lbpnNzjM";
              break;
           case "/clear":
              $(".stream").text("");
@@ -313,25 +313,6 @@ $(document).ready(function(e) {
        return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
     };
     init();
-    
-    function nosis(){
-      let nombrenosis = args.join(" ") //Definimos: nombreyt
-      if(!nombrenosis) return  message.channel.send('Debe proporcionar algo para buscar'); //Si no tiene un nombre de vídeo en yt, retornar.
-
-      message.channel.send(':arrows_counterclockwise: Buscando..!') 
-      .then(m => {
-      youTube.search(args.join(' '), 2, function(err, result){
-        if(err){
-            return console.log(err); 
-
-        }
-        if(result.items[0]["id"].videoId == undefined){
-            return message.channel.send('¡No se han encontrado resultados!'); //Si el vídeo no existe, retornar
-
-        } else{
-            let link = `https://www.youtube.com/watch?v=${result.items[0]["id"].videoId}`
-            m.edit(link); //Editar el mensaje ''Búscando'' por el link del vídeo
-
          }
        })
      })
