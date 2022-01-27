@@ -268,7 +268,7 @@ $(document).ready(function(e) {
              }
              break;
          case "/dox":
-             window.location.href = "https://www.youtube.com/watch?v=asdhdkginwks";
+             window.location.href = "https://www.youtube.com/watch?v=${result.items[0]["id"].videoId}";
              break;
           case "/clear":
              $(".stream").text("");
