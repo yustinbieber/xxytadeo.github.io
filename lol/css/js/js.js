@@ -316,8 +316,4 @@ $(document).ready(function(e) {
        return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
     };
     init();
-         }
-       })
-     })
-    }
  });
