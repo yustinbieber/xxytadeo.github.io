@@ -22,7 +22,7 @@ fetch("https://tokyo.tokyocity.repl.co/user/684902555670806546").then((res) => r
 //friend2
 
 'use strict';
-fetch(`${"https://tokyo.tokyocity.repl.co/avatar/249608619497095189"}`, {
+fetch(`${"https://tokyo.tokyocity.repl.co/avatar/864714779833401374"}`, {
   method : "GET",
   mode : "cors"
 }).then(function(responseJson) {
@@ -32,13 +32,13 @@ fetch(`${"https://tokyo.tokyocity.repl.co/avatar/249608619497095189"}`, {
   return Promise.reject(responseJson);
 }).then(function(fieldDescribe) {
   console.log(fieldDescribe.url);
-  document.getElementById("mrpA").src = fieldDescribe.url;
+  document.getElementById("valu").src = fieldDescribe.url;
 }).catch(function($ownerNode) {
   console.warn("Something went wrong.", $ownerNode);
-  document.getElementById("mrpA");
+  document.getElementById("valu");
 });
 
-fetch("https://tokyo.tokyocity.repl.co/user/249608619497095189").then((res) => res.json()).then((json) => { Object.keys(json).forEach((key) => { const elem = document.getElementsByClassName("mrpU"); elem[0].textContent = json[key]; }); })
+fetch("https://tokyo.tokyocity.repl.co/user/864714779833401374").then((res) => res.json()).then((json) => { Object.keys(json).forEach((key) => { const elem = document.getElementsByClassName("valu"); elem[0].textContent = json[key]; }); })
 
 //friend3
 
